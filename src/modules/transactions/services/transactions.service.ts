@@ -4,7 +4,7 @@ import { Repository, DataSource } from 'typeorm';
 import { User } from '../../users/entities/user.entity';
 import { Transaction } from '../entities/transaction.entity';
 import { UsersService } from '../../users/services/users.service';
-import { TransactionStatus } from 'src/utils/enums/transaction-status.enum';
+import { TransactionStatus } from '../../../utils/enums/transaction-status.enum';
 import { TransactionSummary } from '../interfaces/transaction-summary.interface';
 import logger from '../../../commom/logs/logger';
 

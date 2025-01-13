@@ -40,9 +40,15 @@ docker-compose down
 
 ### Rebuilding the Application
 
-To rebuild the application, run:
+<!-- To rebuild the application, run:
 ```sh
 docker-compose up --build
+``` -->
+
+At the moment the backend is not working in Docker, for now you should upload the isolated components for testing.
+
+```sh
+docker-compose up <container name>
 ```
 
 ### Accessing the Database
@@ -55,6 +61,14 @@ docker exec -it wallet_db mysql -u your_username -p
 ### Accessing Adminer
 
 Adminer is available at [http://localhost:8080](http://localhost:8080)
+
+### Accessing Prometheus
+
+Prometheus is available at [http://localhost:9090](http://localhost:9090)
+
+### Accessing Grafana
+
+Grafana is available at [http://localhost:3001](http://localhost:3001)
 
 ### Additional Commands
 
