@@ -14,6 +14,9 @@
   DB_DATABASE=your_database
   DB_USERNAME=your_username
   DB_PASSWORD=your_password
+  JWT_SECRET=your_secret
+  DB_ROOT_PASSWORD=your_password
+  GF_ADMIN_PASSWORD=your_password
   ```
 
 1. Build and start the Docker containers:
