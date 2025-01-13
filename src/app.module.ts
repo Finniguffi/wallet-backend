@@ -9,6 +9,7 @@ import { DataSource } from 'typeorm';
 import { Transaction } from './modules/transactions/entities/transaction.entity';
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './modules/auth/guards/jwt-auth.guard';  // Importando o JwtAuthGuard
+import { PrometheusModule } from './modules/prometheus/prometheus.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { JwtAuthGuard } from './modules/auth/guards/jwt-auth.guard';  // Importa
     UsersModule,
     AuthModule,
     TransactionsModule,
+    PrometheusModule,
   ],
   providers: [
     {
