@@ -40,7 +40,7 @@ export class TransactionsService {
       }
 
       if (sender.balance < amount) {
-        logger.warn(`Insufficient balance for sender: ${senderId}, current balance: ${sender.balance}`);  // Log para saldo insuficiente
+        logger.warn(`Insufficient balance for sender: ${senderId}, current balance: ${sender.balance}`);
         throw new HttpException('Insufficient balance', HttpStatus.BAD_REQUEST);
       }
 
